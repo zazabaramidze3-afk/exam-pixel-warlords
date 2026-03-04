@@ -29,7 +29,7 @@ body {
 .spotify-container {
   display: grid;
   grid-template-areas: "sidebar main" ". player";
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 260px 1fr;
   grid-template-rows: 1fr 90px;
   height: 100vh;
 }
@@ -54,6 +54,14 @@ body {
   }
   .spotify-container .player-bar .now-playing, .spotify-container .controls, .spotify-container .volume {
     display: none;
+  }
+}
+@media (max-width: 450px) {
+  .spotify-container .card-grid {
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    justify-items: center;
   }
 }
 .spotify-container .nav-links {
@@ -95,8 +103,10 @@ body {
   margin-top: 10px;
 }
 .spotify-container .card {
-  background: #181818;
-  padding: 15px;
+  width: 18rem;
+  background: #121212;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 8px;
   transition: background 0.3s ease;
   cursor: pointer;
@@ -131,7 +141,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
