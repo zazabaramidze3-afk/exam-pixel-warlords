@@ -1,13 +1,11 @@
-@use './base/reset';
-@use './abstracts/variables';
+@use 'base/reset';
 @use 'layout/main-container';
 @use 'layout/header';
 @use 'components/sidebar';
 @use 'components/card';
 @use 'components/player';
 @use 'pages/home';
-
-
+@use 'abstracts/variables';
 
 
 
