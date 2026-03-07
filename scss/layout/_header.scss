@@ -16,6 +16,18 @@
       transition: background-color 0.3s ease;
       &:hover { background-color: #00000014; cursor: pointer; }
     }
+    a{
+      display: flex;
+      align-items: center;
+      background-color: variables.$bg-dark;
+      padding: 8px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      &:hover { background-color: #00000014; cursor: pointer; }
+    }
+  }
+  .top-left-nav-list a{
+    color: #fff;
   }
 
   .bottom-left-nav-list {
