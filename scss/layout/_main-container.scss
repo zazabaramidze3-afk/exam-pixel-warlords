@@ -18,9 +18,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 10px;
+    
   }
 }
 
+.grid-section{
+  position: relative;
+}
 
 .grid-section .made-for-you-action{
     display: flex;
