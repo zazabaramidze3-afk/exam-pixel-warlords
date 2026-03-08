@@ -3,7 +3,7 @@
 
 .player-bar {
   grid-area: player;
-  background: variables.$bg-light;
+  background: rgba(variables.$bg-light,0.2);
   border-radius: 1rem;
   display: flex;
   justify-content: space-evenly;
