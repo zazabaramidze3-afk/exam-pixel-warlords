@@ -4,6 +4,7 @@
 .player-bar {
   grid-area: player;
   background: variables.$bg-light;
+  border-top: 1px solid #e41e1e;
   border-radius: 1rem;
   display: flex;
   justify-content: space-evenly;

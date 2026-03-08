@@ -13,9 +13,7 @@
   background: linear-gradient(to bottom, #000, variables.$bg-black);
   overflow-y: auto;
   padding: 20px;
-  margin: 0.5rem;
-  border: 1px solid variables.$border-color;
-  border-radius: 1rem;
+  border: variables.$border-color;
 
   .card-grid {
     display: grid;
