@@ -1,0 +1,28 @@
+.playlist-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+	gap: 24px;
+}
+.playlist-card {
+	background: #181818;
+	padding: 16px;
+	border-radius: 8px;
+	transition: 0.2s;
+	&:hover {
+		background: #242424;
+	}
+	img {
+		width: 100%;
+		border-radius: 6px;
+		margin-bottom: 12px;
+	}
+	h3 {
+		font-size: 16px;
+		color: white;
+		margin-bottom: 6px;
+	}
+	p {
+		font-size: 13px;
+		color: #b3b3b3;
+	}
+}
