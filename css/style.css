@@ -307,7 +307,8 @@ body {
   align-items: center;
   width: 30rem;
   height: 30rem;
-  background-color: rgba(5, 5, 5, 0.589);
+  background-color: rgba(5, 5, 5, 0.644);
+  border-radius: 0px 0px 0px 30px;
 }
 
 body:has(#toggle-theme:checked) .hidden-sidebar {
@@ -606,6 +607,191 @@ a:hover {
 .song-link-list .song-link li a {
   text-decoration: none;
   color: #898989;
+}
+
+.artist-banner {
+  height: clamp(300px, 40vh, 500px);
+  width: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8)), url("../assets/img/artist/cover-artist.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 40px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.artist-info h1 {
+  font-size: clamp(2rem, 8vw, 6rem);
+  margin: 0;
+}
+
+.play-btn {
+  background: none;
+}
+
+.artist-actions {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.artist-actions .follow-btn {
+  background-color: rgba(137, 137, 137, 0.2509803922);
+  color: #E0E0E0;
+  padding: 1rem 2rem;
+  border-radius: 4.4rem;
+  transition: background-color 0.3s ease;
+}
+.artist-actions .follow-btn:hover {
+  background-color: rgba(14, 13, 13, 0.6705882353);
+  cursor: pointer;
+}
+
+button {
+  background: none;
+}
+
+.artist-navigation .artist-navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 4rem;
+}
+
+.artist-navigation-links li a {
+  color: #E0E0E0;
+  font-size: 1.4rem;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.artist-navigation-links li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  width: 0;
+  height: 2px;
+  background-color: #1db954;
+  transition: width 0.3s ease;
+}
+
+.artist-navigation-links li a:hover::before {
+  width: 100%;
+}
+
+.artist-navigation .hr {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.artist-navigation .hr .hr-line {
+  width: 100%;
+  border: 1px solid rgba(137, 137, 137, 0.2);
+  position: absolute;
+  top: -3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #E0E0E0;
+}
+
+.most-played {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem;
+}
+
+.most-played-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.most-played-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.main-content .card-grid-artist {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.artist-followers {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.8rem;
+}
+
+.card-grid-artist .played-item-like img {
+  width: 4rem;
+  height: 4rem;
+  transition: scale 0.3s ease;
+}
+.card-grid-artist .played-item-like img:hover {
+  transform: scale(1.1);
+}
+
+.artist-pick-top {
+  width: 31rem;
+  height: 15rem;
+  background-color: rgba(24, 25, 30, 0.3019607843);
+  color: #E0E0E0;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.banner-artist {
+  margin-top: 3rem;
+}
+
+.main-content .card-grid-artist-about {
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+  margin: 3rem;
+}
+
+.main-content .card-grid-artist-about .like p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #E0E0E0;
+  transition: color 0.3s ease;
+}
+.main-content .card-grid-artist-about .like p:hover {
+  color: #817e7e;
+}
+
+.in-the-world img {
+  transition: rotate 0.3s ease;
+}
+.in-the-world img:hover {
+  transform: rotate(10deg);
 }
 
 /*# sourceMappingURL=style.css.map */
