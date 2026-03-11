@@ -5,10 +5,8 @@
 .artist-banner {
   height: clamp(300px, 40vh, 500px); 
   width: 100%;
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8)),
-  url("https://zazabaramidze3-afk.github.io/exam-pixel-warlords/assets/img/artist/cover-artist.avif");
-  // url("https://drive.google.com/file/d/1pCw9XWij97i7sC5d7i4Kjm2wDHqUjUQJ/view?usp=sharing");
-  // url("https://drive.google.com");
+  background-image: linear-gradient(transparent, rgba(0,0,0,0.8)),
+  url("../assets/img/artist/cover-artist.png");
   background-size: cover;
   background-position: center;
   border-radius: 1rem;
@@ -137,6 +135,12 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     // gap: 10px;
   
+}
+
+.artist-followers{
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
 }
 .card-grid-artist{
    //
