@@ -806,13 +806,45 @@ h3 {
   transition: scale 0.3s ease;
 }
 .album-item:hover {
-  transform: scale(1.05);
+  transform: scale(0.95);
 }
 
 .album-item-title {
   display: flex;
   gap: 8rem;
   padding: 1rem 0;
+}
+
+.artist-navigation-view {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-content .card-list-album {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.album-item {
+  transition: scale 0.3s ease;
+}
+.album-item:hover {
+  transform: scale(0.95);
+}
+
+.album-item-title {
+  display: flex;
+  gap: 8rem;
+  padding: 1rem 0;
+}
+
+.artist-navigation-view {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
