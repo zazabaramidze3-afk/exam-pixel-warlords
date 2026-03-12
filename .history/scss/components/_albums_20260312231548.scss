@@ -9,12 +9,12 @@
     gap: 2rem;
   
 }
-.album-item{
-    transition: scale 0.3s ease;
-    &:hover{
-        transform: scale(0.95);
-    }
-}
+// .album-item{
+//     transition: scale 0.3s ease;
+//     &:hover{
+//         transform: scale(1.05);
+//     }
+// }
 
 .album-item-title{
     display: flex;

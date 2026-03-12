@@ -1,7 +1,7 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
 
-.main-content .card-grid-album{
+.main-content .card-list-album{
     display: grid;
     justify-content: space-between;
     // grid-template-columns: repeat(3, minmax(180px, 1fr));
@@ -12,7 +12,7 @@
 .album-item{
     transition: scale 0.3s ease;
     &:hover{
-        transform: scale(0.95);
+        transform: scale(1.05);
     }
 }
 
