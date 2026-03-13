@@ -1,3 +1,4 @@
+
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
 @use 'base/reset';
@@ -12,8 +13,9 @@
 @use 'components/song';
 @use 'components/artist';
 @use 'components/artist-about';
-
-
+@use 'components/albums';
+@import '../assets/fonts/Satoshi_complete/Fonts/WEB/css/satoshi.css';
+@use 'components/song-album';
 
 
 

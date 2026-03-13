@@ -1,3 +1,4 @@
+@import '../assets/fonts/Satoshi_complete/Fonts/WEB/css/satoshi.css';
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-  font-family: "Circular", Arial, sans-serif;
+  font-family: "Satoshi-Regular", sans-serif !important;
   background: #000000;
   color: #ffffff;
 }
@@ -792,6 +793,24 @@ h3 {
 }
 .in-the-world img:hover {
   transform: rotate(10deg);
+}
+
+.main-content .card-grid-album {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.album-item {
+  transition: scale 0.3s ease;
+}
+.album-item:hover {
+  transform: scale(1.05);
+}
+
+.album-action {
+  display: inline-flex;
 }
 
 /*# sourceMappingURL=style.css.map */
