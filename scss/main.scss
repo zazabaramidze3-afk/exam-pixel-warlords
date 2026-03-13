@@ -1,3 +1,6 @@
+
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
 @use 'base/reset';
 @use 'layout/main-container';
 @use 'layout/header';
@@ -10,6 +13,16 @@
 @use 'abstracts/variables';
 @use 'components/library';
 @use 'components/likedsongs';
+@use 'components/song';
+@use 'components/artist';
+@use 'components/artist-about';
+@use 'components/albums';
+@use 'components/albums-list';
+@import '../assets/fonts/Satoshi_complete/Fonts/WEB/css/satoshi.css';
+
+
+
+
 
 
 
