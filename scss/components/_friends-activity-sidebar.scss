@@ -16,7 +16,8 @@
   @include mixins.flex();
   width: 30rem;
   height: 30rem;
-  background-color: rgba(5, 5, 5, 0.589)
+  background-color: rgba(5, 5, 5, 0.644);
+  border-radius: 0px 0px 0px 30px;
 }
 
 body:has(#toggle-theme:checked) {
