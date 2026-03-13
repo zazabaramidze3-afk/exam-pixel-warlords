@@ -14,7 +14,7 @@
       <div class="nav-item active"><a href="library.html" class="icon-home"><img src="assets/img/MyLibrary.png" alt="MyLibrary">My Library</a></div>
       <div class="nav-item"><a href="#" class="icon-search"><img src="assets/img/Pins.png" alt="Pins">Pins</a></div>
       <div class="nav-item"><a href="song.html" class="icon-library"><img src="assets/img/Playlists.png" alt="Playlists">Playlists</a></div>
-      <div class="nav-item active"><a href="#" class="icon-home"><img src="assets/img/Likedsongs.png" alt="Likedsongs">Liked songs</a></div>
+      <div class="nav-item active"><a href="likedsongs.html" class="icon-home"><img src="assets/img/Likedsongs.png" alt="Likedsongs">Liked songs</a></div>
       <div class="nav-item"><a href="#" class="icon-search"><img src="assets/img/Saves.png" alt="Saves">Saves</a></div>
       <div class="nav-item"><a href="albums.html" class="icon-library"><img src="assets/img/Albums.png" alt="Albums">Albums</a></div>
       <div class="nav-item active"><a href="#" class="icon-home"><img src="assets/img/Folders.png" alt="Folders">Folders</a></div>
@@ -161,9 +161,13 @@
           Browse all
         </h2>
         <h3>Discover</h3> -->
+        <ul class="artist-navigation-view">
+          <li><a href="albums-list.html"><img src="assets/img/artist-album/show-icon-list.png" alt="list-album"></a></li>
+          <li><a href="albums.html"><img src="assets/img/artist-album/show-icon-grid.png" alt="grid-album"></a></li>
+        </ul>
         <ul class="artist-navigation-links">
           <li><a href="artist.html">Home</a></li>
-          <li><a href="#">Albums</a></li>
+          <li><a href="albums.html">Albums</a></li>
           <li><a href="#">Singles and EPs</a></li>
           <li><a href="#">Compilattions</a></li>
           <li><a href="#">Merch</a></li>
@@ -180,18 +184,87 @@
         </div>    
       </div>
       <div class="card-grid-album">
-        <div class="album-item"><img src="assets/img/artist-album/art-album-1.png" alt="art-album-1"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-2.png" alt="art-album-2"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-3.png" alt="art-album-3"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-4.png" alt="art-album-4"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-5.png" alt="art-album-5"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-6.png" alt="art-album-6"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-7.png" alt="art-album-7"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-8.png" alt="art-album-8"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-5.png" alt="art-album-5"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-5.png" alt="art-album-5"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-5.png" alt="art-album-5"></div>
-        <div class="album-item"><img src="assets/img/artist-album/art-album-5.png" alt="art-album-5"></div>
+        <div class="album-item">
+            <img src="assets/img/artist-album/art-album-1.png" alt="art-album-1">
+            <div class="album-item-title">
+              <strong>Random Access...</strong>
+              <span>22</span>
+          </div>
+          <p>2023</p>
+        </div>
+
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-2.png" alt="art-album-2">
+          <div class="album-item-title">
+              <strong>Random Access...</strong>
+              <span>22</span>
+          </div>
+          <p>2013</p>
+        </div>
+
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-3.png" alt="art-album-3">
+          <div class="album-item-title">
+              <strong>Random Access...</strong>
+              <span>13</span>
+          </div>
+          <p>2013</p>
+        </div>
+
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-4.png" alt="art-album-4">
+          <div class="album-item-title">
+              <strong>TRON: Legacy R...</strong>
+              <span>15</span>
+          </div>
+          <p>2011</p>
+        </div>
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-5.png" alt="art-album-5">
+          <div class="album-item-title">
+              <strong>TRON: Legacy </strong>
+              <span>22</span>
+          </div>
+          <p>2010</p>
+          </div>
+
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-6.png" alt="art-album-6">
+          <div class="album-item-title">
+              <strong>Alive 2007</strong>
+              <span>13</span>
+          </div>
+          <p>2007</p>        
+        </div>
+
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-7.png" alt="art-album-7">
+          <div class="album-item-title">
+              <strong>Human After All...</strong>
+              <span>15</span>
+          </div>
+          <p>2006</p> 
+        </div>
+
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-8.png" alt="art-album-8">
+          <div class="album-item-title">
+              <strong>Human After All</strong>
+              <span>10</span>
+          </div>
+          <p>2005</p> 
+        </div>
+        <div class="album-item"><img src="assets/img/artist-album/art-album-5.png" alt="art-album-5">
+        </div>
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-5.png" alt="art-album-5">
+        </div>
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-5.png" alt="art-album-5">
+        </div>
+        <div class="album-item">
+          <img src="assets/img/artist-album/art-album-5.png" alt="art-album-5">
+        </div>
       </div>
       
     </section>

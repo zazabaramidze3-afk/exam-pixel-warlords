@@ -144,6 +144,12 @@ body {
   color: #1db954;
   scale: 1.05;
 }
+.sidebar .pins-point-icon {
+  margin-left: 140px;
+}
+.sidebar .play-point-icon {
+  margin-left: 120px;
+}
 
 .card {
   width: 18rem;
@@ -183,15 +189,18 @@ body {
 }
 
 .player-bar {
+  position: relative;
   grid-area: player;
-  background: #181818;
+  background: #333842;
   border-radius: 1rem;
   display: flex;
+  margin: 0.5rem;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   padding: 0 20px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .now-playing ul {
@@ -331,6 +340,197 @@ body:has(#toggle-theme:checked) .hidden-sidebar {
     display: none;
   }
 }
+.library-select .library-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem;
+  color: gray;
+}
+.library-select .library-nav li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.library-select .library-nav li:nth-child(1) {
+  margin-right: 12px;
+}
+.library-select .library-nav li:nth-child(2) {
+  margin-right: 28px;
+}
+.library-select .library-nav li:nth-child(3) {
+  margin-right: 18px;
+}
+.library-select .library-nav li:nth-child(5) {
+  margin-left: 28px;
+}
+.library-select .library-nav li:nth-child(6) {
+  margin-left: auto;
+}
+
+.lib-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  background-color: #181818;
+  border-radius: 16px;
+  width: 250px;
+  height: 100vh;
+  z-index: 11;
+  list-style: none;
+  margin: 5px;
+}
+.lib-sidebar li {
+  padding: 10px 0;
+  color: white;
+  cursor: pointer;
+}
+.lib-sidebar .nav-item {
+  padding: 10px 0;
+  color: #b3b3b3;
+}
+.lib-sidebar .nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lib-sidebar .nav-links .nav-item a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+.lib-sidebar .nav-links .nav-item a:hover {
+  color: #1db954;
+  scale: 1.05;
+}
+.lib-sidebar .nav-links .nav-item.active a {
+  color: #ffffff;
+  scale: 1.05;
+}
+.lib-sidebar .nav-links .pins-point-icon {
+  margin-left: 140px;
+}
+.lib-sidebar .nav-links .play-point-icon {
+  margin-left: 120px;
+}
+
+.liked-select .liked-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: gray;
+}
+.liked-select .liked-nav li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 16px;
+}
+.liked-select .liked-nav li:first-child {
+  margin-right: auto;
+}
+.liked-select .liked-nav li:nth-child(2) {
+  margin-left: 12px;
+}
+.liked-select .liked-nav li:nth-child(4) {
+  margin-left: 28px;
+}
+.liked-select .liked-nav li:nth-child(5) {
+  margin-left: 28px;
+}
+.liked-select .liked-nav li:nth-child(6) {
+  margin-left: 28px;
+}
+
+.liked-top-bar .liked-list {
+  display: grid;
+  grid-template-columns: 40px 2fr 2fr 10px 1fr 3.5fr;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #2a2a2a;
+  font-size: 2rem;
+  color: rgb(95, 95, 95);
+}
+
+.song-list {
+  list-style: none;
+  counter-reset: track;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.song-list li {
+  counter-increment: track;
+  display: grid;
+  grid-template-columns: 40px 2fr 2fr 10px 1fr 3.5fr;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.song-list li::before {
+  content: counter(track);
+  color: gray;
+  text-align: center;
+}
+.song-list li:hover {
+  background: #141414;
+  border-radius: 6px;
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.song-info img {
+  width: 5rem;
+  height: 5rem;
+}
+.song-info .title {
+  margin: 0;
+  font-size: 2rem;
+}
+.song-info .artist {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: rgb(95, 95, 95);
+}
+
+.album {
+  font-size: 2rem;
+  color: rgb(95, 95, 95);
+}
+
+.duration {
+  text-align: left;
+  font-size: 2rem;
+  color: rgb(95, 95, 95);
+}
+
+.like {
+  width: 5rem;
+  height: 5rem;
+  justify-self: center;
+  cursor: default;
+}
+
+.liked-cards {
+  width: 100%;
+  margin: 0 auto;
+  align-items: left;
+}
+
 a {
   color: #b3b3b3;
   text-decoration: none;
@@ -806,11 +1006,45 @@ h3 {
   transition: scale 0.3s ease;
 }
 .album-item:hover {
-  transform: scale(1.05);
+  transform: scale(0.95);
 }
 
-.album-action {
-  display: inline-flex;
+.album-item-title {
+  display: flex;
+  gap: 8rem;
+  padding: 1rem 0;
+}
+
+.artist-navigation-view {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-content .card-list-album {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.album-item {
+  transition: scale 0.3s ease;
+}
+.album-item:hover {
+  transform: scale(0.95);
+}
+
+.album-item-title {
+  display: flex;
+  gap: 8rem;
+  padding: 1rem 0;
+}
+
+.artist-navigation-view {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
