@@ -978,13 +978,13 @@ h3 {
   margin: 3rem;
 }
 
-.main-content .card-grid-artist-about .like p {
+.main-content .card-grid-artist-about .artist-about-like p {
   font-size: 1.6rem;
   font-weight: 400;
   color: #E0E0E0;
   transition: color 0.3s ease;
 }
-.main-content .card-grid-artist-about .like p:hover {
+.main-content .card-grid-artist-about .artist-about-like p:hover {
   color: #817e7e;
 }
 
