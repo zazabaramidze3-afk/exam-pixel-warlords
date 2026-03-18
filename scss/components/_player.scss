@@ -1,16 +1,20 @@
 
 @use '../abstracts/variables';
 
+
 .player-bar {
+  position:relative;
   grid-area: player;
-  background: variables.$bg-light;
-  border-top: 1px solid #282828;
+  background: variables.$player-bar;
+  border-radius: 1rem;
   display: flex;
+  margin:0.5rem;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   padding: 0 20px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .now-playing ul {
